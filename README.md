@@ -38,7 +38,7 @@ A major issue identified:
 
 The attacker triggered multiple MFA prompts until the user approved one.
 
-![MFA Fatigue Evidence](images/mfa-fatigue-signinlogs.png)
+![MFA Fatigue Evidence](mfa-fatigue-signinlogs.png)
 
 ---
 
@@ -46,7 +46,7 @@ The attacker triggered multiple MFA prompts until the user approved one.
 
 A foreign IP address was used to access the account.
 
-![Attacker IP](images/attacker-ip-netherlands.png)
+![Attacker IP](attacker-ip-netherlands.png)
 
 - IP: 205.147.16.190  
 - Location: Netherlands  
@@ -57,7 +57,7 @@ A foreign IP address was used to access the account.
 
 Mailbox activity occurred **before MFA approval**, indicating advanced attack behavior.
 
-![Pre-MFA Mail Access](images/premfa-mail-access.png)
+![Pre-MFA Mail Access](premfa-mail-access.png)
 
 ---
 
@@ -65,7 +65,7 @@ Mailbox activity occurred **before MFA approval**, indicating advanced attack be
 
 The attacker created inbox rules to maintain access.
 
-![Inbox Rule Creation](images/inbox-rule-creation.png)
+![Inbox Rule Creation](inbox-rule-creation.png)
 
 ---
 
@@ -73,7 +73,7 @@ The attacker created inbox rules to maintain access.
 
 Sensitive emails were automatically forwarded to an external address.
 
-![Forwarding Rule](images/forwarding-rule-exfiltration.png)
+![Forwarding Rule](forwarding-rule-exfiltration.png)
 
 ---
 
@@ -81,7 +81,7 @@ Sensitive emails were automatically forwarded to an external address.
 
 Security-related emails were deleted to avoid detection.
 
-![Delete Rule](images/delete-rule-evasion.png)
+![Delete Rule](delete-rule-evasion.png)
 
 ---
 
@@ -89,7 +89,7 @@ Security-related emails were deleted to avoid detection.
 
 A fraudulent invoice email was sent internally using a trusted conversation.
 
-![BEC Email](images/bec-email-evidence.png)
+![BEC Email](bec-email-evidence.png)
 
 ---
 
@@ -97,7 +97,7 @@ A fraudulent invoice email was sent internally using a trusted conversation.
 
 The attacker accessed cloud storage after sending the fraudulent email.
 
-![OneDrive Access](images/onedrive-file-access.png)
+![OneDrive Access](onedrive-file-access.png)
 
 ---
 
@@ -105,7 +105,7 @@ The attacker accessed cloud storage after sending the fraudulent email.
 
 A critical security failure allowed the attack.
 
-![Conditional Access Failure](images/conditional-access-failure.png)
+![Conditional Access Failure](conditional-access-failure.png)
 
 - No Conditional Access enforcement  
 - MFA fatigue attack successful  
