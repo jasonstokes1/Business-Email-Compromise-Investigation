@@ -113,6 +113,18 @@ A critical security failure allowed the attack.
 
 ---
 
+## 🧭 MITRE ATT&CK Mapping
+
+| Tactic | Technique | Description |
+|-------|----------|-------------|
+| Initial Access | T1078 – Valid Accounts | Attacker used stolen credentials to access the account |
+| Credential Access | T1621 – Multi-Factor Authentication Request Generation | MFA fatigue attack used to gain access |
+| Persistence | T1098 – Account Manipulation | Inbox rules created to maintain access |
+| Defense Evasion | T1564.008 – Email Hiding Rules | Security-related emails deleted to avoid detection |
+| Collection | T1114 – Email Collection | Attacker accessed and reviewed mailbox contents |
+| Exfiltration | T1020 – Automated Exfiltration | Emails automatically forwarded to an external account |
+| Impact | T1566.002 – Phishing (BEC) | Fraudulent invoice email sent using compromised account |
+
 ## 📌 Indicators of Compromise (IOCs)
 
 - 205.147.16.190  
