@@ -30,7 +30,7 @@ The attacker:
 - Accessed cloud storage (OneDrive)
 
 A major issue identified:
-> ❌ Conditional Access policies were not enforced
+> * Conditional Access policies were not enforced
 
 ---
 
@@ -38,15 +38,15 @@ A major issue identified:
 
 The attacker triggered multiple MFA prompts until the user approved one.
 
-![MFA Fatigue Evidence](mfa-fatigue-signinlogs.png)
+<img width="624" height="209" alt="Screenshot 2026-04-18 at 7 38 09 AM" src="https://github.com/user-attachments/assets/d0d1a80c-791d-413d-a796-073bb9be6843" />
 
 ---
 
-## 🌍 Attacker Infrastructure
+## Attacker Infrastructure
 
 A foreign IP address was used to access the account.
 
-![Attacker IP](attacker-ip-netherlands.png)
+<img width="623" height="195" alt="Screenshot 2026-04-18 at 7 39 02 AM" src="https://github.com/user-attachments/assets/1b47aede-585e-4c84-bbda-bf19e120e39b" />
 
 - IP: 205.147.16.190  
 - Location: Netherlands  
@@ -57,7 +57,7 @@ A foreign IP address was used to access the account.
 
 Mailbox activity occurred **before MFA approval**, indicating advanced attack behavior.
 
-![Pre-MFA Mail Access](premfa-mail-access.png)
+<img width="623" height="141" alt="Screenshot 2026-04-18 at 7 39 56 AM" src="https://github.com/user-attachments/assets/1cfc3b38-6658-4305-8e76-7d46678dce34" />
 
 ---
 
@@ -65,7 +65,7 @@ Mailbox activity occurred **before MFA approval**, indicating advanced attack be
 
 The attacker created inbox rules to maintain access.
 
-![Inbox Rule Creation](inbox-rule-creation.png)
+<img width="625" height="194" alt="Screenshot 2026-04-18 at 7 40 43 AM" src="https://github.com/user-attachments/assets/2d880557-bd5a-448e-a63f-fe7da70319b4" />
 
 ---
 
@@ -73,7 +73,7 @@ The attacker created inbox rules to maintain access.
 
 Sensitive emails were automatically forwarded to an external address.
 
-![Forwarding Rule](forwarding-rule-exfiltration.png)
+<img width="625" height="141" alt="Screenshot 2026-04-18 at 7 41 17 AM" src="https://github.com/user-attachments/assets/f02ad1df-1c43-4f07-b874-879102ef5fd6" />
 
 ---
 
@@ -81,7 +81,7 @@ Sensitive emails were automatically forwarded to an external address.
 
 Security-related emails were deleted to avoid detection.
 
-![Delete Rule](delete-rule-evasion.png)
+<img width="625" height="204" alt="Screenshot 2026-04-18 at 7 41 54 AM" src="https://github.com/user-attachments/assets/399bc80e-a0d6-4376-bd81-9bc021620104" />
 
 ---
 
@@ -89,7 +89,7 @@ Security-related emails were deleted to avoid detection.
 
 A fraudulent invoice email was sent internally using a trusted conversation.
 
-![BEC Email](bec-email-evidence.png)
+<img width="625" height="145" alt="Screenshot 2026-04-18 at 7 42 23 AM" src="https://github.com/user-attachments/assets/7c990ae1-3acc-43a3-84ac-c346dd02e796" />
 
 ---
 
@@ -97,7 +97,7 @@ A fraudulent invoice email was sent internally using a trusted conversation.
 
 The attacker accessed cloud storage after sending the fraudulent email.
 
-![OneDrive Access](onedrive-file-access.png)
+<img width="625" height="220" alt="Screenshot 2026-04-18 at 7 43 15 AM" src="https://github.com/user-attachments/assets/b7bb8090-cf2b-40fb-aada-edf1be83647f" />
 
 ---
 
@@ -105,7 +105,8 @@ The attacker accessed cloud storage after sending the fraudulent email.
 
 A critical security failure allowed the attack.
 
-![Conditional Access Failure](conditional-access-failure.png)
+<img width="625" height="261" alt="Screenshot 2026-04-18 at 7 43 51 AM" src="https://github.com/user-attachments/assets/bf64714e-a9ce-4f5d-9ea7-be548b5b883a" />
+
 
 - No Conditional Access enforcement  
 - MFA fatigue attack successful  
@@ -113,7 +114,7 @@ A critical security failure allowed the attack.
 
 ---
 
-## 🧭 MITRE ATT&CK Mapping
+## MITRE ATT&CK Mapping
 
 | Tactic | Technique | Description |
 |-------|----------|-------------|
