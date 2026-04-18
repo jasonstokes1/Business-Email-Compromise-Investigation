@@ -1,6 +1,6 @@
-# 🛡️ Business Email Compromise (BEC) Investigation
+# Business Email Compromise (BEC) Investigation
 
-## 📌 Overview
+## Overview
 
 This project documents a Business Email Compromise (BEC) investigation using Microsoft Sentinel.
 
@@ -8,7 +8,7 @@ The attacker used stolen credentials and an MFA fatigue attack to gain access, c
 
 ---
 
-## 🎯 Key Skills Demonstrated
+## Key Skills Demonstrated
 
 - Threat Hunting (KQL)
 - Incident Response
@@ -18,7 +18,7 @@ The attacker used stolen credentials and an MFA fatigue attack to gain access, c
 
 ---
 
-## 🚨 Executive Summary
+## Executive Summary
 
 A finance employee account was compromised after the user approved a malicious MFA request.
 
@@ -34,7 +34,7 @@ A major issue identified:
 
 ---
 
-## 🔓 Initial Access (MFA Fatigue)
+## Initial Access (MFA Fatigue)
 
 The attacker triggered multiple MFA prompts until the user approved one.
 
@@ -53,7 +53,7 @@ A foreign IP address was used to access the account.
 
 ---
 
-## 🚨 Key Finding: Pre-MFA Mail Access
+## Key Finding: Pre-MFA Mail Access
 
 Mailbox activity occurred **before MFA approval**, indicating advanced attack behavior.
 
@@ -61,7 +61,7 @@ Mailbox activity occurred **before MFA approval**, indicating advanced attack be
 
 ---
 
-## 🧩 Persistence (Inbox Rules)
+## Persistence (Inbox Rules)
 
 The attacker created inbox rules to maintain access.
 
@@ -69,7 +69,7 @@ The attacker created inbox rules to maintain access.
 
 ---
 
-## 📤 Data Exfiltration
+## Data Exfiltration
 
 Sensitive emails were automatically forwarded to an external address.
 
@@ -77,7 +77,7 @@ Sensitive emails were automatically forwarded to an external address.
 
 ---
 
-## 🗑️ Defense Evasion
+## Defense Evasion
 
 Security-related emails were deleted to avoid detection.
 
@@ -85,7 +85,7 @@ Security-related emails were deleted to avoid detection.
 
 ---
 
-## 💰 BEC Attack Execution
+## BEC Attack Execution
 
 A fraudulent invoice email was sent internally using a trusted conversation.
 
@@ -93,7 +93,7 @@ A fraudulent invoice email was sent internally using a trusted conversation.
 
 ---
 
-## ☁️ Lateral Movement
+## Lateral Movement
 
 The attacker accessed cloud storage after sending the fraudulent email.
 
@@ -101,7 +101,7 @@ The attacker accessed cloud storage after sending the fraudulent email.
 
 ---
 
-## 🚫 Root Cause
+## Root Cause
 
 A critical security failure allowed the attack.
 
@@ -125,7 +125,7 @@ A critical security failure allowed the attack.
 | Exfiltration | T1020 – Automated Exfiltration | Emails automatically forwarded to an external account |
 | Impact | T1566.002 – Phishing (BEC) | Fraudulent invoice email sent using compromised account |
 
-## 📌 Indicators of Compromise (IOCs)
+## Indicators of Compromise (IOCs)
 
 - 205.147.16.190  
 - insights@duck.com  
@@ -133,7 +133,7 @@ A critical security failure allowed the attack.
 
 ---
 
-## 🔒 Recommendations
+## Recommendations
 
 - Enforce Conditional Access
 - Disable legacy authentication
@@ -143,7 +143,7 @@ A critical security failure allowed the attack.
 
 ---
 
-## 📎 Conclusion
+## Conclusion
 
 This incident demonstrates how attackers can bypass MFA using social engineering and exploit weak identity controls to execute financial fraud and access sensitive data.
 
